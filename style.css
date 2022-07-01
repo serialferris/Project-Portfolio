@@ -83,6 +83,12 @@ body {
   left: 50%;
 }
 
+.work-container {
+  display: flex;
+  padding: 0 24px;
+  margin-bottom: 80px;
+}
+
 .work-title {
   font-family: 'Crete Round';
   font-style: normal;
@@ -91,6 +97,8 @@ body {
   line-height: 52px;
   display: flex;
   align-items: center;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #212121;
 }
 
 .feature {
