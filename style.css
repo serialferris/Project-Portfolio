@@ -83,6 +83,11 @@ body {
   left: 50%;
 }
 
+.work {
+  display: block;
+  padding: 120px 0;
+}
+
 .work-container {
   display: flex;
   padding: 0 24px;
@@ -123,8 +128,6 @@ body {
 }
 
 .project-title {
-  width: 327px;
-  height: 36px;
   font-family: 'Crete Round';
   font-style: normal;
   font-weight: 400;
@@ -136,8 +139,6 @@ body {
 }
 
 .project-text {
-  width: 327px;
-  height: 147px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -230,4 +231,111 @@ body {
   color: #fff;
   border: none;
 
+}
+
+.about {
+background-color: #1c1a19;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-image: url(./images/about-image.svg);
+background-repeat: no-repeat;
+background-position: top 25rem right;
+}
+
+.about-first--container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 120px 24px;
+  margin-bottom: 90px;
+}
+
+.aboutheading {
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+.mydescription {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.resume {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: white;
+  padding: 12px;
+  letter-spacing: 3%;
+  width: max-content;
+  background-color: #ff6b00;
+  border: none;
+}
+
+.about-skills--container {
+  display: flex;
+  flex-direction: column;
+  padding: 120px 0;
+  gap: 24px;
+}
+
+.skill-li--container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.skill-li-title {
+  display: flex;
+  gap: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-li-title .icon {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  width: 18px;
+  height: 18px;
+  background-color: #ff6b00;
+}
+
+.lang-icon {
+  transform: rotate(45deg);
+}
+
+.skill-icon {
+  border-radius: 50%;
+}
+
+.skill-container--ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-align: center;
+  gap: 8px;
+}
+
+.ul--li {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 42.7px;
+  color: white;
+  padding: 12px;
 }
