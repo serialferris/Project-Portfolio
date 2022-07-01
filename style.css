@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;700&family=Poppins&family=Roboto:wght@400;500&display=swap');
 * {
   box-sizing: border-box;
   padding: 0;
@@ -82,4 +81,76 @@ body {
 .image {
   position: relative;
   left: 50%;
+}
+
+.work-title {
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  gap: 24px;
+}
+
+.languages {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 12px;
+}
+
+.skills {
+  padding: 10px 12px;
+  border: 1px solid #8993A4;
+}
+
+.project-title {
+  width: 327px;
+  height: 36px;
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #091E42;
+}
+
+.project-text {
+  width: 327px;
+  height: 147px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.project-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.see-project-button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  width: 124px;
+  padding: 12px 12px;
+  background: #FF6B00;
+  border: none;
+}
+
+.skills {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
 }
