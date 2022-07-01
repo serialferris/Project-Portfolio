@@ -110,6 +110,8 @@ body {
 .skills {
   padding: 10px 12px;
   border: 1px solid #8993A4;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
 }
 
 .project-title {
@@ -150,7 +152,74 @@ body {
   border: none;
 }
 
-.skills {
+.random-projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  padding: 0 24px;
+  grid-row-gap: 24px;
+}
+
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(./images/random-project-image.png);
+  background-repeat: auto, no-repeat;
+  background-size: cover;
+  padding-top: 76px;
+  gap: 14px;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 8px 16px;
+}
+
+.project-title2 {
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+
+.project-text2 {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
+
+.lang {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+}
+
+.skills2 {
+  padding: 10px 12px;
+  border: 1px solid #8993A4;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
+  background: rgba(255, 255, 255, 0.24);
+  border: none;
+  color: #fff;
+}
+
+.see2 {
+  font-size: 17px; /* 1rem => 16px, 1em => 2rem */
+  line-height: 23px;
+  letter-spacing: 3%;
+  padding: 12px;
+  font-family: 'Inter';
+  font-weight: bold;
+  background-color: #ff6b00;
+  color: #fff;
+  border: none;
+
 }
