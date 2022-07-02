@@ -10,7 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/serialferris/Project-Portfolio.git"
   },
-  "author": "jimi",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/serialferris/Project-Portfolio/issues"

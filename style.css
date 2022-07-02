@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;700&family=Poppins&family=Roboto:wght@400;500&display=swap');
 
 * {
   box-sizing: border-box;
@@ -82,4 +82,258 @@ body {
 .image {
   position: relative;
   left: 50%;
+}
+
+.work {
+  display: block;
+  padding: 120px 0;
+}
+
+.work-container {
+  display: flex;
+  padding: 0 24px;
+  margin-bottom: 80px;
+}
+
+.work-title {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #212121;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  gap: 24px;
+}
+
+.languages {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 12px;
+}
+
+.skills {
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.project-title {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #091e42;
+}
+
+.project-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.project-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.see-project-button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  width: 124px;
+  padding: 12px 12px;
+  background: #ff6b00;
+  border: none;
+}
+
+.random-projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  padding: 0 24px;
+  grid-row-gap: 24px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(./images/random-project-image.png);
+  background-repeat: auto, no-repeat;
+  background-size: cover;
+  padding-top: 76px;
+  gap: 14px;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 8px 16px;
+}
+
+.project-title2 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.project-text2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
+
+.lang {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+}
+
+.skills2 {
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.24);
+  color: #fff;
+}
+
+.see2 {
+  font-size: 17px; /* 1rem => 16px, 1em => 2rem */
+  line-height: 23px;
+  letter-spacing: 3%;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  background-color: #ff6b00;
+  color: #fff;
+  border: none;
+}
+
+.about {
+  background-color: #1c1a19;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./images/about-image.svg);
+  background-repeat: no-repeat;
+  background-position: top 25rem right;
+}
+
+.about-first--container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 120px 24px;
+  margin-bottom: 90px;
+}
+
+.aboutheading {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+.mydescription {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.resume {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: white;
+  padding: 12px;
+  letter-spacing: 3%;
+  width: max-content;
+  background-color: #ff6b00;
+  border: none;
+}
+
+.about-skills--container {
+  display: flex;
+  flex-direction: column;
+  padding: 120px 0;
+  gap: 24px;
+}
+
+.skill-li--container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.skill-li-title {
+  display: flex;
+  gap: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-li-title .icon {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  width: 18px;
+  height: 18px;
+  background-color: #ff6b00;
+}
+
+.lang-icon {
+  transform: rotate(45deg);
+}
+
+.skill-icon {
+  border-radius: 50%;
+}
+
+.skill-container--ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-align: center;
+  gap: 8px;
+}
+
+.ul--li {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 42.7px;
+  color: white;
+  padding: 12px;
 }
