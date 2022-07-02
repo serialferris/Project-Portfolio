@@ -8,11 +8,11 @@ with Intro,works and about sections
 
 ## Built With
 
--Html
--CSS
--Using Flexbox
--Using Grid
--Added Linters
+- Html
+- CSS
+- Using Flexbox
+- Using Grid
+- Added Linters
 
 ## Live Demo (if available)
 
