@@ -225,10 +225,29 @@ body {
   letter-spacing: 3%;
   padding: 12px;
   font-family: 'Inter', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   background-color: #ff6b00;
   color: #fff;
   border: none;
+}
+
+.see2:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  font-weight: 700;
+  color: #f55800;
+}
+
+.see2:active {
+  background: #e05304;
+  color: #f4f1f0;
+  font-weight: 700;
+}
+
+.see2:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+  font-weight: 700;
 }
 
 .about {
@@ -339,6 +358,8 @@ body {
 }
 
 .text-container {
+  display: flex;
+  flex-direction: column;
   margin-top: 120px;
   align-items: center;
 }
@@ -354,6 +375,7 @@ body {
 }
 
 .contact-form {
+  display: flex;
   margin: 24px;
 }
 
