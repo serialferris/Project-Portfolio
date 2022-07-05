@@ -392,7 +392,6 @@ body {
 .input-email {
   height: 48px;
   width: 100%;
-  margin-top: 24px;
   margin-bottom: 24px;
   padding: 16px;
   border: none;
@@ -401,7 +400,6 @@ body {
 
 .input-text-area {
   width: 100%;
-  margin-top: 24px;
   margin-bottom: 24px;
   padding: 16px;
   border: none;
