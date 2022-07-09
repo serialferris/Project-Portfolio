@@ -388,6 +388,10 @@ nav {
   color: #172b4d;
 }
 
+.newprojects-text:hover {
+  transform: translate(15px, 1px);
+}
+
 .contact-form {
   display: flex;
   margin: 24px;
