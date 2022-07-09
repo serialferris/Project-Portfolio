@@ -18,6 +18,10 @@ body {
   justify-content: space-between;
 }
 
+nav {
+  display: none;
+}
+
 .flex-container {
   background-color: #1c1a19;
   background-image: url(./images/illustration.svg);
@@ -68,6 +72,16 @@ body {
 }
 
 .wrapper {
+  display: flex;
+  width: 200px;
+  justify-content: space-around;
+}
+
+.wrapper-footer li {
+  list-style: none;
+}
+
+.wrapper-footer {
   display: flex;
   width: 200px;
   justify-content: space-around;
@@ -418,4 +432,111 @@ body {
   justify-content: center;
   height: 72px;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 2.5%;
+  }
+
+  .headline {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 566px;
+    position: relative;
+    left: 143px;
+    gap: 24px;
+  }
+
+  .flex-container {
+    background-color: #1c1a19;
+    background-image: url(./images/illustration.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 0 right 0;
+    display: flex;
+    flex-direction: column;
+    padding: 120px 1.8rem 120px 1.8rem;
+    gap: 12px;
+  }
+
+  .about-first--container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 566px;
+  }
+
+  .about-skills--container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .skill-li--container {
+    margin-right: 153px;
+  }
+
+  .newprojects-text1 {
+    width: 455px;
+    height: 256px;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .newprojects-text {
+    margin-left: 135px;
+    width: 455px;
+    height: 256px;
+  }
+
+  nav {
+    display: inline-block;
+    font-weight: 500px;
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .bars {
+    display: none;
+  }
+
+  .links {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .feature {
+    display: grid;
+    grid-template-columns: 684px 448px;
+    grid-template-rows: 448px;
+    gap: 24px;
+    margin-bottom: 50px;
+  }
+
+  .yoga-image {
+    width: 100%;
+  }
+
+  .random-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-gap: 2.4rem;
+  }
+
+  .about {
+    background-position: top right;
+    background-size: 40% 40%;
+    padding: 0 12rem;
+  }
 }
