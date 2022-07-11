@@ -388,6 +388,10 @@ nav {
   color: #172b4d;
 }
 
+.newprojects-text:hover {
+  transform: translate(15px, 1px);
+}
+
 .contact-form {
   display: flex;
   margin: 24px;
@@ -432,6 +436,10 @@ nav {
   justify-content: center;
   height: 72px;
   width: 100%;
+}
+
+.random-projects:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (min-width: 768px) {
