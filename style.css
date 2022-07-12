@@ -38,7 +38,6 @@ nav {
   cursor: pointer;
 }
 
-/* C75300 */
 .heading {
   color: #ff6b00; 
   font-family: 'Crete Round', serif;
@@ -245,7 +244,7 @@ nav {
   padding: 12px;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  background-color: #ff6b00;
+  background-color: #C75300;
   color: #fff;
   border: none;
 }
@@ -314,7 +313,7 @@ nav {
   padding: 12px;
   letter-spacing: 3%;
   width: max-content;
-  background-color: #ff6b00;
+  background-color: #C75300;
   border: none;
 }
 
