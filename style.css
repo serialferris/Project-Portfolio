@@ -38,8 +38,9 @@ nav {
   cursor: pointer;
 }
 
+/* C75300 */
 .heading {
-  color: #ff6b00;
+  color: #ff6b00; 
   font-family: 'Crete Round', serif;
   display: inline-block;
   font-weight: normal;
@@ -75,6 +76,10 @@ nav {
   display: flex;
   width: 200px;
   justify-content: space-around;
+}
+
+.hidden {
+  display: none;
 }
 
 .wrapper-footer li {
