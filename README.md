@@ -2,16 +2,23 @@
 
 # Project Name
 
->My Portfolio project
+> My Portfolio project
 
 # Project Description
 
->Created a web page with the following sections:
+> Created a web page with the following sections:
 - Works section
 - About myself section
+<<<<<<< HEAD
 - Contact section
 
 
+=======
+- Contact form
+- Animations
+- RWD
+ 
+>>>>>>> master
 ## Built With
 
 - Html
