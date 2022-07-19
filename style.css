@@ -82,7 +82,7 @@ nav.active {
 
 .xicon {
   display: none;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   position: absolute;
   right: 1.8rem;
   bottom: 1rem;
@@ -95,7 +95,7 @@ nav.active {
 }
 
 .xicon.show {
- display: block;
+  display: block;
 }
 
 .heading {
