@@ -12,6 +12,8 @@ body {
 
 .header {
   display: flex;
+  width: 100%;
+  position: fixed;
   background-color: #3c3a39;
   padding: 1.2rem 1.8rem 1.2rem 1.8rem;
   align-items: center;
@@ -19,6 +21,42 @@ body {
 }
 
 nav {
+  position: fixed;
+  display: flex;
+  top: 0;
+  right: -100%;
+  background-color: #3c3a39;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+nav.active {
+  right: 0;
+}
+
+.nav-menu {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 60px;
+  width: 100%;
+  gap: 1rem;
+}
+
+.links {
+  color: #fff5e1;
+  text-decoration: none;
+  font-family: Inter, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+
+.mailicon {
   display: none;
 }
 
@@ -34,8 +72,30 @@ nav {
 }
 
 .bars {
+  position: absolute;
+  right: 2rem;
+  bottom: 1.4rem;
   color: #fff5e1;
   cursor: pointer;
+  z-index: 1000;
+}
+
+.xicon {
+  display: none;
+  font-family: Arial, sans-serif;
+  position: absolute;
+  right: 1.8rem;
+  bottom: 1rem;
+  color: #fff;
+  z-index: 500;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  font-size: 1rem;
+}
+
+.xicon.show {
+  display: block;
 }
 
 .heading {
@@ -245,7 +305,7 @@ nav {
 }
 
 .see2 {
-  font-size: 17px; /* 1rem => 16px, 1em => 2rem */
+  font-size: 17px;
   line-height: 23px;
   letter-spacing: 3%;
   padding: 12px;
