@@ -9,12 +9,14 @@
 >Created a web page with the following sections:
 - Works section
 - About myself section
+- Contact section
 
 
 ## Built With
 
 - Html
 - CSS
+- JS
 - Using Flexbox
 - Using Grid
 - Added Linters
@@ -37,6 +39,12 @@ To get a local copy up and running follow these simple example steps.
   - npx stylelint "\*_/_.{css,scss}" --fix (This will fix the linters error, if any)
   - npm install --save-dev hint@7.x (Install the WebHint Linters)
   - npx hint . (You should see Finishing... on your terminal)
+  - ESLint -
+  - Run 
+  npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
+  - Run npx eslint . on the root of your directory of your project.
+
+
 
 ## Live Demo (if available)
 
