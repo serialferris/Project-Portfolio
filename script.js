@@ -13,11 +13,10 @@ closeIcon.addEventListener('click', () => {
     closeIcon.classList.remove('show');
     navMenu.classList.remove('active');
     hamburger.classList.add('bars');
-  });
+});
   
-  links.forEach((n) => n.addEventListener('click', () => {
+links.forEach((n) => n.addEventListener('click', () => {
     navMenu.classList.remove('active');
     closeIcon.classList.remove('show');
     hamburger.classList.add('bars');
-  }));
-  
+}));
