@@ -20,4 +20,3 @@ links.forEach((n) => n.addEventListener('click', () => {
     closeIcon.classList.remove('show');
     hamburger.classList.add('bars');
 }));
-  
