@@ -2,7 +2,7 @@
 
 # Project Name
 
-> My Portfolio project
+> Jimi's Portfolio
 
 # Project Description
 
