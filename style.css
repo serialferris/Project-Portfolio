@@ -6,8 +6,16 @@
   margin: 0;
 }
 
+html {
+  min-height: 100%;
+}
+
 body {
+  height: 100%;
   width: 100%;
+  margin: auto;
+  position: relative;
+  z-index: 1;
 }
 
 .header {
@@ -20,7 +28,7 @@ body {
   justify-content: space-between;
 }
 
-nav {
+.navbar {
   position: fixed;
   display: flex;
   top: 0;
@@ -32,7 +40,7 @@ nav {
   transition: 0.5s ease-in-out;
 }
 
-nav.active {
+.navbar.active {
   right: 0;
 }
 
@@ -289,7 +297,7 @@ nav.active {
   color: white;
 }
 
-.lang {
+.lang, .technology-list {
   display: flex;
   list-style: none;
   gap: 12px;
@@ -513,6 +521,133 @@ nav.active {
   transform: scale(1.1);
 }
 
+/* Window Modal Style */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  max-width: inherit;
+  max-height: inherit;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  z-index: 5;
+  display: flex;
+  padding: 0 1.6rem;
+  justify-content: center;
+}
+
+.modalWindow {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  width: max-content;
+  height: 90vh;
+  max-height: max-content;
+  margin: auto;
+  padding: 1.6rem;
+  background-color: white;
+  z-index: 5;
+  overflow-y: scroll;
+}
+
+.modalWindowChildWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-1 {
+  gap: 4.4rem;
+}
+
+.modalWindowChildWrapper .project {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper-2 {
+  gap: 2.4rem;
+}
+
+.project-modal-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.2rem;
+  color: rgb(23, 43, 77);
+}
+
+.lang .skills {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 1.4rem;
+  background-color: rgba(255, 255, 255, 0.244);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.modalWindowChildWrapper .technology-list .skills {
+  outline: 1px solid rgb(151, 148, 147);
+  padding: 1rem 1.2rem;
+  color: rgba(60, 58, 57, 1);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}
+
+.pIcon {
+  display: inline-block;
+}
+
+.modalWindowChildWrapper--Img {
+  width: 100%;
+}
+
+.modalWindow_sub--child {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  width: 100%;
+}
+
+.modalWindow_sub--child--desc {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-align: justify;
+  color: rgb(52, 69, 99);
+}
+
+.project--close_icon {
+  cursor: pointer;
+}
+
+.modalWindow_sub--child--btn_wrapper {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.btn_wrapper--modal-btn {
+  text-decoration: none;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  background-color: rgb(255, 107, 0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: max-content;
+  gap: 1.2rem;
+  padding: 1.2rem;
+}
+
 @media screen and (min-width: 768px) {
   .wrapper {
     float: left;
@@ -530,6 +665,10 @@ nav.active {
     position: relative;
     left: 143px;
     gap: 24px;
+  }
+
+  .hr {
+    display: none;
   }
 
   .flex-container {
@@ -574,16 +713,33 @@ nav.active {
     height: 256px;
   }
 
-  nav {
-    display: inline-block;
-    font-weight: 500px;
+  .navbar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    right: 0;
+    background-color: #3c3a39;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .navbar.active {
+    right: 0;
+  }
+  
+  .nav-menu {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    margin: 0 0 0 auto;
+    width: auto;
+    gap: 1rem;
   }
 
-  nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
+  .mailicon {
+    display: block;
   }
 
   .bars {
@@ -593,6 +749,7 @@ nav.active {
   .links {
     color: #fff;
     text-decoration: none;
+    font-size: 15px;
   }
 
   .feature {
@@ -617,5 +774,44 @@ nav.active {
     background-position: top right;
     background-size: 40% 40%;
     padding: 0 12rem;
+  }
+
+
+  .modalWindow {
+    width: 90%;
+    max-width: max-content;
+    height: 85%;
+    max-height: max-content;
+    overflow: auto;
+  }
+
+  .wrapper-1 {
+    gap: 1rem;
+  }
+
+  .wrapper-2 {
+    flex-direction: row;
+  }
+
+  .modalWindowChildWrapper--Img {
+    display: block;
+    width: 60%;
+  }
+
+  .wrapper-2 .modalWindow_sub--child {
+    width: 40%;
+    justify-content: space-between;
+  }
+
+  .modalWindow_sub--child--btn_wrapper {
+    justify-content: flex-start;
+    gap: 1.6rem;
+  }
+
+  .form-error--msg {
+    bottom: 4%;
+    left: 52%;
+    width: 100%;
+    font-size: 1.45rem;
   }
 }
