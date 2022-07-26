@@ -10,6 +10,7 @@
 - Works section
 - About myself section
 - Contact form
+- Popup Window
 - Animations
 - RWD
  
