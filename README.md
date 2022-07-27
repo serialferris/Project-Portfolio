@@ -2,7 +2,7 @@
 
 # Project Name
 
-> Jimi's Portfolio
+> Jimi's Portfolio-Full stack web developer
 
 # Project Description
 
@@ -10,6 +10,7 @@
 - Works section
 - About myself section
 - Contact form
+- Popup Window
 - Animations
 - RWD
  
