@@ -518,10 +518,6 @@ body {
   width: 100%;
 }
 
-.random-projects:hover {
-  transform: scale(1.1);
-}
-
 /* Window Modal Style */
 .overlay {
   position: fixed;
@@ -575,14 +571,14 @@ body {
 
 .project-modal-title {
   font-family: "Roboto", sans-serif;
-  font-size: 3.2rem;
+  font-size: 1.6rem;
   color: rgb(23, 43, 77);
 }
 
 .lang .skills {
   font-size: 1.5rem;
   line-height: 2rem;
-  padding: 1.4rem;
+  padding: 0.5rem;
   background-color: rgba(255, 255, 255, 0.244);
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -590,12 +586,12 @@ body {
 
 .modalWindowChildWrapper .technology-list .skills {
   outline: 1px solid rgb(151, 148, 147);
-  padding: 1rem 1.2rem;
+  padding: 1rem 0.5rem;
   color: rgba(60, 58, 57, 1);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 1.3rem;
-  line-height: 1.6rem;
+  font-size: 1rem;
+  line-height: 0.5rem;
 }
 
 .pIcon {
@@ -604,21 +600,21 @@ body {
 
 .modalWindowChildWrapper--Img {
   width: 100%;
+  height: 70%;
 }
 
 .modalWindow_sub--child {
   display: flex;
   flex-direction: column;
-  gap: 2.4rem;
+  gap: 1rem;
   width: 100%;
 }
 
 .modalWindow_sub--child--desc {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.2rem;
   color: rgb(52, 69, 99);
 }
 
@@ -638,14 +634,14 @@ body {
   color: white;
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-size: 1.7rem;
-  line-height: 2.4rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   background-color: rgb(255, 107, 0);
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: max-content;
-  gap: 1.2rem;
+  width: 80%;
+  gap: 0.5rem;
   padding: 1.2rem;
 }
 
@@ -800,7 +796,6 @@ body {
 
   .wrapper-2 .modalWindow_sub--child {
     width: 40%;
-    justify-content: space-between;
   }
 
   .modalWindow_sub--child--btn_wrapper {
